@@ -1,0 +1,24 @@
+import java.util.Scanner;
+  
+public class Main {
+    
+	public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	int x, y, soma;
+	
+	soma = 0;
+	
+	System.out.println("Escreva dois números: ");
+	x = sc.nextInt();
+	y = sc.nextInt();
+	
+	soma = x + y;
+	
+	System.out.print("Soma: " + soma);
+	
+	sc.close();
+	
+}
+    }
