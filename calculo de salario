@@ -1,0 +1,30 @@
+import java.util.Locale;
+    import java.util.Scanner;
+    
+    public class Main {
+        
+         public static void main (String[] args) {
+             
+             Locale.setDefault(Locale.US);
+             Scanner sc = new Scanner(System.in);
+             
+            int hora_trabalhada, numero_funcionario;
+            double salario, valor_hora; 
+            
+            salario = 0;
+            
+            System.out.print("Número do funcionário: ");
+            numero_funcionario = sc.nextInt();
+            System.out.print("Quantidade de horas trabalhadas:  ");
+            hora_trabalhada = sc.nextInt();
+            System.out.print("Valor de uma hora trabalhada: ");
+            valor_hora = sc.nextDouble();
+            
+            salario = hora_trabalhada * valor_hora;
+            
+            System.out.println("Número do funcionário: " + numero_funcionario);
+            System.out.print("Salário:  U$ " + String.format("%.2f", salario));
+             
+             sc.close();
+         }
+    }
